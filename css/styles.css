@@ -41,7 +41,6 @@ h3,
 .header-contacts {
   font-weight: 500;
   color: var(--headline-color);
-  flex-direction: flex-end;
 }
 img {
   display: block;
@@ -135,7 +134,7 @@ header ul {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
-.contacts:hover,
+
 .footer-contacts:hover {
   color: var(--hover-color);
   transition-property: background-color, color, box-shadow;
@@ -467,14 +466,6 @@ textarea {
 .icon-close {
   fill: black;
 }
-.header-contacts li,
-.our-team li,
-.things-we-do li,
-.values li,
-.portfolio-items li,
-.filter-items li {
-  display: inline-block;
-}
 
 .our-values .container {
   width: 1200px;
@@ -513,17 +504,17 @@ textarea {
   line-height: 1.7;
 }
 
-.centered-title {
+.things-we-do__title {
   text-align: center;
   font-size: 36px;
   margin-bottom: 50px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.things-we-do-section {
+.things-we-do__section {
   padding-top: 0;
 }
-.things-we-do {
+.things-we-do__list {
   display: flex;
 }
 .things-we-do li {
@@ -562,6 +553,13 @@ textarea {
   padding-bottom: 94px;
   padding-top: 94px;
   display: flex;
+}
+.our-team__title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .our-team ul {
   display: flex;
@@ -701,7 +699,7 @@ footer {
 footer .container {
   display: flex;
 }
-.logo-contacts {
+.logo-and-contacts {
   margin-right: 70px;
 }
 footer li {
@@ -963,6 +961,10 @@ address {
 .filter-items {
   text-align: center;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .filter-item {
   background-color: var(--light-section);
