@@ -2,7 +2,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p,
@@ -15,7 +15,6 @@ ul {
 
 body {
   font-family: Roboto, sans-serif;
-  color: #757575;
   position: relative;
   background: #ffffff;
   line-height: 2;
@@ -30,20 +29,28 @@ p {
   color: #757575;
 }
 
-button:active, button:hover, button:focus {
+button:active,
+button:hover,
+button:focus {
   color: #ffffff;
   cursor: pointer;
-  -webkit-transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-property: background-color, border, color, fill,
+    -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform, -webkit-box-shadow, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: #2196f3;
   cursor: pointer;
 }
@@ -81,8 +88,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: space-between;
-          flex-direction: space-between;
+  -ms-flex-direction: space-between;
+  flex-direction: space-between;
   border-bottom: 1px solid #ececec;
 }
 
@@ -91,11 +98,11 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav {
@@ -104,11 +111,11 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .nav li a {
@@ -119,50 +126,50 @@ header ul {
   text-decoration: none;
 }
 
-.nav-anchors {
+.nav-pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-anchors li:not(:last-child) {
+.nav-pages li:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-anchors a {
+.nav-pages a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 76px;
   color: #212121;
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-anchors .current {
+.nav-pages .current {
   position: relative;
   height: 100%;
   color: #2196f3;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-anchors .current::after {
+.nav-pages .current::after {
   content: " ";
   position: absolute;
   bottom: -1px;
@@ -178,64 +185,71 @@ header ul {
   height: 100%;
 }
 
-.nav li a:hover, .nav li a:focus, .nav li a:active {
+.nav li a:hover,
+.nav li a:focus,
+.nav li a:active {
   color: #2196f3;
-  -webkit-transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-property: background-color, border, color, fill,
+    -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform, -webkit-box-shadow, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
   margin-left: auto;
 }
 
-.header-contacts .item {
+.header-contacts__item {
   fill: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts .item a {
+.header-contacts__item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.header-contacts .item a:hover, .header-contacts .item a:focus {
+.header-contacts__item a:hover,
+.header-contacts__item a:focus {
   fill: #2196f3;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts .item svg {
+.header-contacts__item svg {
   margin-right: 10px;
 }
 
@@ -256,7 +270,7 @@ header ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts .item + .item {
+.header-contacts__item + .header-contacts__item {
   margin-left: 50px;
 }
 
@@ -276,14 +290,18 @@ header ul {
 
 .footer-contacts:hover {
   color: #2196f3;
-  -webkit-transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-property: background-color, border, color, fill,
+    -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform, -webkit-box-shadow, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -305,11 +323,11 @@ footer .logo {
   margin-bottom: 20px;
 }
 
-.header-studio {
+.logo__variety--black {
   color: #212121;
 }
 
-.footer-studio {
+.logo__variety--white {
   color: #ffffff;
 }
 
@@ -320,15 +338,23 @@ footer .logo {
   padding-bottom: 200px;
   letter-spacing: 0.06em;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #2f303a66), color-stop(40%, #2f303a66)), url(../images/background-image.jpg);
-  background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%), url(../images/background-image.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(40%, #2f303a66),
+      color-stop(40%, #2f303a66)
+    ),
+    url(../images/background-image.jpg);
+  background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+    url(../images/background-image.jpg);
   max-width: 1600px;
   background-size: cover;
   background-position: center;
   background-color: #2f303a;
 }
 
-.service-ordering-title {
+.service-ordering__title {
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
@@ -337,7 +363,7 @@ footer .logo {
   margin-bottom: 30px;
 }
 
-.service-ordering-button {
+.service-ordering__button {
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -345,7 +371,7 @@ footer .logo {
   line-height: 1.87;
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 00.06em;
   color: #ffffff;
@@ -373,7 +399,7 @@ footer .logo {
 
 .backdrop.is-hidden .modal-window {
   -webkit-transform: translate(-50%, -50%) scale(1.3);
-          transform: translate(-50%, -50%) scale(1.3);
+  transform: translate(-50%, -50%) scale(1.3);
 }
 
 .modal-window {
@@ -382,19 +408,22 @@ footer .logo {
   top: 50%;
   width: 528px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 41px;
   padding-right: 39px;
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window-title {
@@ -409,57 +438,58 @@ footer .logo {
   margin-bottom: 12px;
 }
 
-.user-data {
+.user-data-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.user-data-item {
+.user-data-form__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-bottom: 10px;
 }
 
-.user-data-item:hover, .user-data-item:focus,
-.user-data-item:active .user-data-item svg {
+.user-data-form__item:hover,
+.user-data-form__item:focus,
+.user-data-form__item:active .user-data-form__item svg {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-data-item label {
+.user-data-form__item label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 100%;
   margin-bottom: 4px;
   font-family: inherit;
@@ -471,13 +501,13 @@ footer .logo {
   color: #757575;
 }
 
-.user-data-icon {
+.user-data-form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
 }
 
-.user-data-item input {
+.user-data-form__item input {
   padding-left: 42px;
   padding-right: 15px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -487,18 +517,20 @@ footer .logo {
   padding-bottom: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 4px;
 }
 
-.user-data-item input:focus, .user-data-item input:hover, .user-data-item input:active {
+.user-data-form__item input:focus,
+.user-data-form__item input:hover,
+.user-data-form__item input:active {
   border-color: #2196f3;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
-.user-data-item textarea {
+.user-data-form__item textarea {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -517,18 +549,19 @@ footer .logo {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 4px;
 }
 
-.user-data-item textarea:hover, .user-data-item textarea:focus {
+.user-data-form__item textarea:hover,
+.user-data-form__item textarea:focus {
   border-color: #2196f3;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
-.checkbox {
+.checkbox__label {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -539,20 +572,20 @@ footer .logo {
   margin-bottom: 30px;
 }
 
-.checkbox-sign {
+.checkbox__input-sign {
   margin-right: 7px;
   opacity: 1;
 }
 
-.agree-send-form {
+.checkbox-form {
   margin-bottom: 30px;
 }
 
-.agreement-terms a {
+.agreement-terms_link a {
   color: #2196f3;
 }
 
-.modal-window-data-send {
+.user-data__send-button {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -569,34 +602,34 @@ footer .logo {
   border: none;
   background: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.agree-send {
+.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.user-data-item:focus .user-data-item svg,
-.user-data-item:active .user-data-item svg {
+.user-data-form__item:focus .user-data-form__item svg,
+.user-data-form__item:active .user-data-form__item svg {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agreement-terms {
+.agreement-terms_link {
   color: #2196f3;
 }
 
@@ -609,13 +642,13 @@ footer .logo {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background: #2196f3;
   fill: #ffffff;
   border-radius: 2px;
 }
 
-.checkbox-sign {
+.checkbox__input-sign {
   visibility: hidden;
 }
 
@@ -631,14 +664,14 @@ footer .logo {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.agree-send-form input:checked + .checkbox::after {
+.checkbox-form input:checked + .checkbox::after {
   visibility: hidden;
 }
 
-.close {
+.close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -650,28 +683,38 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #ffffff;
-  -webkit-transition: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, box-shadow, fill, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, box-shadow, fill, transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, box-shadow, fill,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, box-shadow, fill,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close:hover .icon-close {
+.close-button:hover .close-button__icon {
   background-color: #ffffff;
   fill: #2196f3;
-  -webkit-transition: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, box-shadow, fill, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, box-shadow, fill, transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, box-shadow, fill,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, box-shadow, fill,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close {
+.close-button__icon {
   fill: black;
 }
 
@@ -693,11 +736,11 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -746,8 +789,8 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   font-size: 36px;
   margin-bottom: 50px;
@@ -767,11 +810,11 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -806,8 +849,10 @@ footer .logo {
 
 .our-team li {
   background: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
@@ -821,11 +866,11 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
@@ -833,7 +878,7 @@ footer .logo {
 
 .team-contacts li {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
 }
 
@@ -842,22 +887,27 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   fill: #afb1b8;
   background-color: #ffffff;
-  -webkit-transition: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, box-shadow, fill, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, border, color, box-shadow, fill, transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, box-shadow, fill,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, border, color, box-shadow, fill,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-contacts-icon a {
@@ -866,22 +916,27 @@ footer .logo {
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-contacts-icon a:hover, .team-contacts-icon a:focus {
+.team-contacts-icon a:hover,
+.team-contacts-icon a:focus {
   fill: #ffffff;
   background-color: #2196f3;
-  -webkit-transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-property: background-color, border, color, fill,
+    -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform, -webkit-box-shadow, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-contacts-icon:not(:last-child) {
@@ -951,37 +1006,46 @@ footer .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 4px;
   fill: #afb1b8;
   border: 1px solid;
   border-color: #afb1b8;
   margin-right: 30px;
-  -webkit-transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-property: background-color, border, color, fill,
+    -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform, -webkit-box-shadow, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon:hover, .client-icon:focus {
+.client-icon:hover,
+.client-icon:focus {
   fill: #2196f3;
   border-color: #2196f3;
-  -webkit-transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, fill, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform;
-  transition-property: background-color, border, color, box-shadow, fill, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-property: background-color, border, color, fill,
+    -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border, color, fill, -webkit-box-shadow,
+    -webkit-transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-property: background-color, border, color, box-shadow, fill,
+    transform, -webkit-box-shadow, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -991,11 +1055,11 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -1056,7 +1120,7 @@ address {
 .join-methods li {
   border: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -1065,16 +1129,16 @@ address {
   margin-right: 0;
 }
 
-.join-method a {
+.join-methods__item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
   border-radius: 50%;
@@ -1083,26 +1147,27 @@ address {
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-method a:hover, .join-method a:focus {
+.join-methods__item a:hover,
+.join-methods__item a:focus {
   background: #2196f3;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe {
   margin-left: auto;
 }
 
-.subscribe-title {
+.subscribe__title {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -1119,11 +1184,11 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.email-input {
+.subscribe__email-input {
   margin-right: 12px;
   width: 358px;
   background-color: inherit;
@@ -1133,17 +1198,17 @@ address {
   padding-right: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
 
-.email-input:not(:placeholder-shown):invalid {
+.subscribe__email-input:not(:placeholder-shown):invalid {
   border-color: red;
 }
 
-.submit {
+.email-submit-button {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1153,17 +1218,17 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   border: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1176,29 +1241,29 @@ address {
   margin-left: 10px;
 }
 
-.filter-items {
+.filter-menu {
   text-align: center;
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.filter-item {
+.filter-menu__item {
   background-color: #f5f4fa;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  color: var(--headline-color);
+  color: #212121;
   border-radius: 4px;
   padding: 6px 22px;
   box-shadow: none;
@@ -1208,24 +1273,31 @@ address {
   transition-property: background-colour, color, -webkit-box-shadow;
   transition-property: background-colour, color, box-shadow;
   transition-property: background-colour, color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: background-color, border, color, box-shadow, fill, transform;
-          transition-duration: background-color, border, color, box-shadow, fill, transform;
+  -webkit-transition-duration: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-duration: background-color, border, color, box-shadow, fill,
+    transform;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-item:hover, .filter-item:focus {
+.filter-menu__item:hover,
+.filter-menu__item:focus {
   background-color: #2196f3;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   -webkit-transition-property: background-colour, color, -webkit-box-shadow;
   transition-property: background-colour, color, -webkit-box-shadow;
   transition-property: background-colour, color, box-shadow;
   transition-property: background-colour, color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: background-color, border, color, box-shadow, fill, transform;
-          transition-duration: background-color, border, color, box-shadow, fill, transform;
+  -webkit-transition-duration: background-color, border, color, box-shadow, fill,
+    transform;
+  transition-duration: background-color, border, color, box-shadow, fill,
+    transform;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-items {
@@ -1247,13 +1319,13 @@ address {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .portfolio-card {
   text-decoration: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin-right: 30px;
   margin-bottom: 30px;
   -webkit-transition-property: -webkit-box-shadow;
@@ -1261,9 +1333,9 @@ address {
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card a {
@@ -1279,17 +1351,20 @@ address {
   letter-spacing: 0.03em;
 }
 
-.portfolio-card:hover, .portfolio-card:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-card:hover,
+.portfolio-card:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card:nth-child(3n) {
@@ -1313,15 +1388,15 @@ address {
 .portfolio-card:hover .thumb-description {
   opacity: 0.9;
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-items h2 {
@@ -1362,11 +1437,11 @@ address {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .description-words {

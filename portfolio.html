@@ -33,27 +33,28 @@
   </head>
 
   <body class="portfolio-body">
-    <header>
+     <header>
       <div class="container">
         <nav class="nav">
           <a href="" target="_blank" rel="nofollow noreferrer" class="logo">
-            Web<span class="header-studio">Studio</span>
+            Web<span class="logo__variety--black">Studio</span>
           </a>
-          <ul class="nav-anchors">
-            <li><a href="./index.html">Студия</a></li>
-            <li><a class="current" href="./portfolio.html">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+          <ul class="nav-pages">
+            <li class="nav-pages__item"><a class="current" href="./index.html">Студия</a></li>
+            <li class="nav-pages__item"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-pages__item"><a href="">Контакты</a></li>
           </ul>
+
           <ul class="header-contacts">
-            <li class="item">
+            <li class="header-contacts__item">
               <a href="mailto:info@devstudio.com">
                 <svg width="16px" height="12px">
                   <use href="images/icons.svg#icon-envelope"></use>
                 </svg>
-                info@devstudio.com
-              </a>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="item">
+            <li class="header-contacts__item">
               <a href="tel:+38 096 111 11 11">
                 <svg width="10px" height="16px">
                   <use href="images/icons.svg#icon-smartphone"></use>
@@ -68,12 +69,12 @@
 
     <section class="portfolio-items">
       <div class="container">
-        <ul class="filter-items">
-          <li><button type="button" class="filter-item">Все</button></li>
-          <li><button type="button" class="filter-item">Веб-сайты</button></li>
-          <li><button type="button" class="filter-item">Приложения</button></li>
-          <li><button type="button" class="filter-item">Дизайн</button></li>
-          <li><button type="button" class="filter-item">Маркетинг</button></li>
+        <ul class="filter-menu">
+          <li><button type="button" class="filter-menu__item">Все</button></li>
+          <li><button type="button" class="filter-menu__item">Веб-сайты</button></li>
+          <li><button type="button" class="filter-menu__item">Приложения</button></li>
+          <li><button type="button" class="filter-menu__item">Дизайн</button></li>
+          <li><button type="button" class="filter-menu__item">Маркетинг</button></li>
         </ul>
         <ul class="portfolio-cards">
           <li class="portfolio-card">
@@ -288,38 +289,38 @@
     <footer>
       <div class="container">
         <div class="logo-and-contacts">
-          <a class="logo" href="">Web<span class="footer-studio">Studio</span></a>
+          <a class="logo" href="">Web<span class="logo__variety--white">Studio</span></a>
           <address>г. Киев, пр-т Леси Украинки, 26</address>
           <ul class="footer-contacts">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+            <li class="footer-contacts__item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="footer-contacts__item" ><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
           </ul>
         </div>
         <div class="join">
           <h2 class="join-title">Присоединяйтесь</h2>
           <ul class="join-methods">
-            <li class="join-method">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-method">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-method">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-method">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-linkedin"></use>
@@ -329,12 +330,12 @@
           </ul>
         </div>
         <div class="subscribe">
-            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
             <div class="form">
             <form name="subscribe" autocomplete="on"></form>
              <label for="email-input"></label>
-              <input id="email-input" class="email-input" type="email" name="email" placeholder="E-mail" />
-             <button type="submit" class="submit">
+              <input id="email-input" class="subscribe__email-input" type="email" name="email" placeholder="E-mail" />
+             <button type="submit" class="email-submit-button">
               Подписаться
               <svg width="24px" height="24px" class="send">
                 <use href="images/icons.svg#icon-send"></use>

@@ -1,4 +1,4 @@
-.filter-items {
+.filter-menu {
   text-align: center;
   margin-bottom: 50px;
   display: flex;
@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.filter-item {
+.filter-menu__item {
   background-color: $light-section;
   box-shadow: none;
   font-family: inherit;

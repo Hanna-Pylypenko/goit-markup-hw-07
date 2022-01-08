@@ -31,16 +31,16 @@
       <div class="container">
         <nav class="nav">
           <a href="" target="_blank" rel="nofollow noreferrer" class="logo">
-            Web<span class="header-studio">Studio</span>
+            Web<span class="logo__variety--black">Studio</span>
           </a>
-          <ul class="nav-anchors">
-            <li><a class="current" href="./index.html">Студия</a></li>
-            <li><a href="./portfolio.html">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+          <ul class="nav-pages">
+            <li class="nav-pages__item"><a class="current" href="./index.html">Студия</a></li>
+            <li class="nav-pages__item"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-pages__item"><a href="">Контакты</a></li>
           </ul>
 
           <ul class="header-contacts">
-            <li class="item">
+            <li class="header-contacts__item">
               <a href="mailto:info@devstudio.com">
                 <svg width="16px" height="12px">
                   <use href="images/icons.svg#icon-envelope"></use>
@@ -48,7 +48,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="header-contacts__item">
               <a href="tel:+38 096 111 11 11">
                 <svg width="10px" height="16px">
                   <use href="images/icons.svg#icon-smartphone"></use>
@@ -63,65 +63,65 @@
 
     <section class="service-ordering">
       <div class="container">
-        <h1 class="service-ordering-title">
+        <h1 class="service-ordering__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button data-modal-open type="button" class="service-ordering-button">
+        <button data-modal-open type="button" class="service-ordering__button">
           Заказать услугу
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal-window">
-            <button data-modal-close type="button" class="close">
-              <svg width="18px" height="18px" class="icon-close">
+            <button data-modal-close type="button" class="close-button">
+              <svg width="18px" height="18px" class="close-button__icon">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <h2 class="modal-window-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <h2 class="modal-window__title">Оставьте свои данные, мы вам перезвоним</h2>
             
-            <ul class="user-data">
-              <li class="user-data-item">
+            <ul class="user-data-form">
+              <li class="user-data-form__item">
                 <label>Имя
-                  <svg width="12px" height="12px" class="user-data-icon">
+                  <svg width="12px" height="12px" class="user-data-form__icon">
                     <use href="images/icons.svg#icon-user-name" ></use>
                   </svg>
                   <input type="text" name="user-name" id="user-name" class="user-name" required>
                 </label>
               </li>
-                <li class="user-data-item">
+                <li class="user-data-form__item">
                   <label>Телефон
-                    <svg width="13px" height="13px" class="user-data-icon">
+                    <svg width="13px" height="13px" class="user-data-form__icon">
                       <use href="./images/icons.svg#icon-phone" ></use>
                     </svg>
                   <input name="phone-number" id="phone-number" type="tel" required>
                   </label>
                 </li>
-                <li class="user-data-item">
+                <li class="user-data-form__item">
                   <label>Почта
-                    <svg width="15px" height="12px" class="user-data-icon">
+                    <svg width="15px" height="12px" class="user-data-form__icon">
                       <use href="./images/icons.svg#icon-email" ></use>
                     </svg>
                     <input name="user-email" id="user-email" type="email" required>
                   </label>
                 </li>
-                <li class="user-data-item">
+                <li class="user-data-form__item">
                   <label>Комментарий
                   <textarea name="comment" id="comment"  rows="6" placeholder="Введите текст"></textarea>
                   </label>
                 </li>
             </ul>
-                <div class="agree-send">
-                  <form name="checkbox" class="agree-send-form">
+                <div class="checkbox">
+                  <form name="checkbox" class="checkbox-form">
                     <span class="checkbox-positioning">
                       <svg width="16px" height="15px">
                       <use href="images/icons.svg#icon-check" ></use> </svg>
-                     <input id="checkbox" type="checkbox" class="checkbox-sign" required>
-                     <label for="checkbox" name="checkbox" class="checkbox">Соглашаюсь с рассылкой и принимаю 
-                       <a class="agreement-terms" href="">Условия договора</a>
+                     <input id="checkbox" type="checkbox" class="checkbox__input-sign" required>
+                     <label for="checkbox" name="checkbox" class="checkbox__label">Соглашаюсь с рассылкой и принимаю 
+                       <a class="agreement-terms_link" href="">Условия договора</a>
                      </label>
                     </span>
                   </form>
-                  <button class="modal-window-data-send" type="submit">Отправить</button>
+                  <button class="user-data__send-button" type="submit">Отправить</button>
                 </div>
           </div>
         </div>
@@ -385,7 +385,7 @@
     </section>
     <section class="loyal-clients">
       <div class="container">
-        <h2>Постоянные клиенты</h2>
+        <h2 >Постоянные клиенты</h2>
         <ul class="clients-icons">
           <li>
             <a class="client-icon" href="">
@@ -410,7 +410,7 @@
             </a>
           </li>
           <li>
-            <a class="client-icon" href="">
+            <a class="client-icon">
               <svg width="106px" height="60px">
                 <use href="./images/icons.svg#icon-loyal-client-4"></use>
               </svg>
@@ -437,40 +437,38 @@
     <footer>
       <div class="container">
         <div class="logo-and-contacts">
-          <a class="logo" href=""
-            >Web<span class="footer-studio">Studio</span></a
-          >
+          <a class="logo" href="">Web<span class="logo__variety--white">Studio</span></a>
           <address>г. Киев, пр-т Леси Украинки, 26</address>
           <ul class="footer-contacts">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+            <li class="footer-contacts__item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="footer-contacts__item" ><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
           </ul>
         </div>
         <div class="join">
           <h2 class="join-title">Присоединяйтесь</h2>
-          <ul class="join-methods">
-            <li class="join-method">
+           <ul class="join-methods">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-method">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-method">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-method">
+            <li class="join-methods__item">
               <a href="">
                 <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-linkedin"></use>
@@ -480,12 +478,12 @@
           </ul>
         </div>
         <div class="subscribe">
-            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
             <div class="form">
             <form name="subscribe" autocomplete="on"></form>
              <label for="email-input"></label>
-              <input id="email-input" class="email-input" type="email" name="email" placeholder="E-mail" />
-             <button type="submit" class="submit">
+              <input id="email-input" class="subscribe__email-input" type="email" name="email" placeholder="E-mail" />
+             <button type="email-submit-button" class="submit">
               Подписаться
               <svg width="24px" height="24px" class="send">
                 <use href="images/icons.svg#icon-send"></use>
