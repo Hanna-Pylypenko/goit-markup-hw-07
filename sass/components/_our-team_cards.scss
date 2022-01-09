@@ -1,5 +1,5 @@
 .our-team {
-  background: var(--light-section);
+  background: $light-section;
   padding-bottom: 94px;
   padding-top: 94px;
   display: flex;
@@ -14,8 +14,30 @@
     border-radius: 0px 0px 4px 4px;
     text-align: center;
   }
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  & p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  & h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
 }
-.team-members .team-member:not(:last-child) {
+.team-members__card:not(:last-child) {
   margin-right: 30px;
 }
 .team-contacts {
@@ -45,7 +67,7 @@
       $transition-timing-function;
   }
 }
-.team-contacts-icon a {
+.team-contacts__icon a {
   fill: $icon-fill-color;
   background-color: $body-background;
   transition-property: background-color, fill;
@@ -61,34 +83,11 @@
     transition-timing-function: $transition-timing-function;
   }
 }
-.team-contacts-icon:not(:last-child) {
+.team-contacts__icon:not(:last-child) {
   margin-right: 10px;
 }
-.our-team {
-  &__title {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 50px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
-  & p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-  }
-  & h3 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-  }
-}
-.card-capture {
+
+.team-members__card-capture {
   padding-top: 30px;
   padding-bottom: 16px;
 }

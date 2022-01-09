@@ -1,5 +1,5 @@
 .loyal-clients {
-  & h2 {
+  &__title {
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -10,15 +10,17 @@
     color: $headline-color;
     margin-bottom: 50px;
   }
-  & ul {
+  &-list {
     display: flex;
-  }
-  & li:last-child {
-    margin-right: 0;
   }
 }
 
-.client-icon {
+.loyal-clients-list__item {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.loyal-clients-list__item-icon {
   width: 170px;
   height: 92px;
   display: flex;

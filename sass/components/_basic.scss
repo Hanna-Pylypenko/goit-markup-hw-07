@@ -30,7 +30,6 @@ button {
   &:active,
   &:hover,
   &:focus {
-    color: $body-background;
     cursor: pointer;
     transition-property: $transition-property;
     transition-duration: $transition-duration;
