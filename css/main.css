@@ -1052,7 +1052,7 @@ address {
   display: flex;
 }
 
-.join-methods li {
+.join-methods__item {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1060,7 +1060,7 @@ address {
   margin-right: 10px;
 }
 
-.join-methods li:last-child {
+.join-methods__item:last-child {
   margin-right: 0;
 }
 

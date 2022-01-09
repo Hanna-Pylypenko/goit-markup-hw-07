@@ -23,7 +23,7 @@ ul {
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
-  font-family: Roboto, sans-serif;
+  font-family: $primary-text, sans-serif;
   color: var(--text-color);
   position: relative;
 
@@ -149,10 +149,10 @@ a:active {
   cursor: pointer;
 }
 .logo {
-  font-family: Raleway;
+  font-family: $secondary-text;
   width: 145px;
   left: 215px;
-  font-family: Raleway;
+  font-family: $secondary-text;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -319,7 +319,7 @@ textarea {
 }
 .user-data-form__item textarea {
   margin-bottom: 20px;
-  font-family: Roboto;
+  font-family: $primary-text;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -356,7 +356,7 @@ textarea {
   color: var(--hover-color);
 }
 .user-data__send-button {
-  font-family: Roboto;
+  font-family: $primary-text;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -497,7 +497,7 @@ textarea {
   margin-bottom: 10px;
 }
 .values-list p {
-  font-family: "Roboto";
+  font-family: "$primary-text";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -537,7 +537,7 @@ textarea {
   background-color: rgba(47, 48, 58, 0.8);
 }
 .things-we-do__capture {
-  font-family: Roboto;
+  font-family: $primary-text;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -619,7 +619,7 @@ textarea {
   margin-right: 10px;
 }
 .our-team p {
-  font-family: Roboto;
+  font-family: $primary-text;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -804,7 +804,7 @@ subscribe__form {
 }
 
 .email-submit-button {
-  font-family: Roboto;
+  font-family: $primary-text;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

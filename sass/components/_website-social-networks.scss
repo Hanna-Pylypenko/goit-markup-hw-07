@@ -17,14 +17,14 @@
 .join-methods {
   display: flex;
 
-  & li {
+  &__item {
     border: none;
     box-shadow: none;
     border-radius: 50%;
 
     margin-right: 10px;
   }
-  & li:last-child {
+  &__item:last-child {
     margin-right: 0;
   }
 }
